@@ -1,0 +1,866 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Mulish", sans-serif;
+    /* letter-spacing: 2px; */
+}
+
+/* HOME : LINE 192 */
+
+/* SIGN UP & SIGN IN */
+.all {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.left {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #2B156BCC;
+    background-image: url(/CSS/Assets/image/avenger.png);
+    background-size: cover;
+}
+
+.hashtag {
+    font-family: "inter", sans-serif;
+    color: #FFFF;
+    opacity: 80%;
+    font-size: 48px;
+    font-weight: 300;
+}
+
+.right {
+    padding: 120px 100px;
+    font-family: "inter", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.headSign {
+    color: #121212;
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.right .headSign2 {
+    color: #AAAAAA;
+    display: flex;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-bottom: 37px;
+}
+
+.right .inputForm {
+    font-family: "Mulish", sans-serif;
+    display: flex;
+    flex-direction: column;
+    color: #4E4B66;
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 0;
+}
+
+.right .inputForm input {
+    width: 500px;
+    height: 64px;
+    border: 1px solid #DEDEDE;
+    border-radius: 15px;
+    padding: 24px;
+    margin-top: 12px;
+    margin-bottom: 24px;
+}
+
+.right .inputForm input::placeholder {
+    color: #A0A3BD;
+    font-size: 16px;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+.right .inputForm .password {
+    background-image: url(/CSS/Assets/icon/eyeslash.png);
+    background-repeat: no-repeat;
+    background-position: right 22px center;
+}
+
+.right .signBut {
+    display: flex;
+    align-items: center;
+    margin-top: 32px;
+}
+
+.right .signBut button {
+    width: 500px;
+    height: 64px;
+    font-size: 16px;
+    color: #F7F7FC;
+    background-color: #5F2EEA;
+    border: none;
+    border-radius: 15px;
+}
+
+.footSign {
+    display: flex;
+    justify-content: center;
+    font-family: "inter", sans-serif;
+    font-size: 16px;
+    color: #AAAAAA;
+    letter-spacing: 0px;
+    margin-top: 32px;
+}
+
+.right .footSign .signLink {
+    margin-left: 5px;
+}
+
+
+
+/* HOME */
+.homeNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 104px;
+    padding: 0 130px;
+}
+.homeNav2 {
+    display: none;
+}
+.homeList {
+    display: flex;
+    align-items: center;
+    color: #414141;
+    font-size: 16px;
+    font-weight: 600;
+}
+.homeNav .homeList .ticHome {
+    margin-right: 72px;
+}
+.homeList .listMov {
+    margin-left: 64px;
+}
+.homeList .listHo {
+    margin-left: 72px;
+}
+.homeNav button {
+    width: 120px;
+    height: 40px;
+    font-size: 14px;
+    color: #F7F7FC;
+    background-color: #5F2EEA;
+    border: none;
+    border-radius: 6px;
+}
+.homeHeader {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 48px;
+    padding-bottom: 142px;
+}
+.tagChild {
+    font-size: 24px;
+    font-weight: 400;
+    color: #A0A3BD;
+    letter-spacing: 0;
+}
+.tagChild1 {
+    font-size: 56px;
+    font-weight: 700;
+    color: #5F2EEA;
+    margin-top: 30px;
+}
+
+
+
+main {
+    background-color: #F5F6F8;
+    padding-top: 64px;
+    padding-bottom: 100px;
+    padding-left: 130px;
+    padding-right: 25px;
+}
+.mainChild {
+    display: flex;
+    justify-content: space-between;
+}
+.mainGchild {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mainChild .mainGchild .nowShow {
+    font-size: 24px;
+    font-weight: 700;
+    color: #5F2EEA;
+}
+.mainChild .mainGchild img {
+    margin-top: 16px;
+    width: 100px;
+}
+.mainChild .viewAll {
+    font-size: 16px;
+    font-weight: 700;
+    color: #5F2EEA;
+    padding-right: 105px;
+}
+.mainChild1 {
+    width: 100%;
+    display: flex;
+    gap: 45px;
+    margin-top: 56px;
+    overflow-x: scroll;
+    scroll-snap-type: mandatory;
+}
+
+
+
+aside {
+    padding-top: 64px;
+    padding-bottom: 100px;
+    padding-left: 130px;
+    padding-right: 25px;
+}
+.asideChild {
+    display: flex;
+    justify-content: space-between;
+}
+.asideGchild {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.asideChild .asideGchild .upcoming {
+    font-size: 24px;
+    font-weight: 700;
+}
+.asideChild .viewAll {
+    font-size: 16px;
+    font-weight: 700;
+    color: #5F2EEA;
+    padding-right: 105px;
+}
+.monthBut {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+    overflow-x: scroll;
+    scroll-snap-type: mandatory;
+
+}
+.septBut {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 147px;
+    height: 42px;
+    padding: 0 50px;
+    border: none;
+    background-color: #5F2EEA;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    color: white; 
+}
+.otherBut {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 147px;
+    height: 42px;
+    padding: 0 50px;
+    border: 1px #5F2EEA solid;
+    background-color: white;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #5F2EEA;
+}
+.asideChild1 {
+    width: 100%;
+    display: flex;
+    gap: 50px;
+    overflow-x: scroll;
+    scroll-snap-type: mandatory;
+}
+.asideGchild1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 223px;
+    height: 452px;
+    padding: 32px;
+    margin-top: 56px;
+    border: 1px #DEDEDE solid;
+    border-radius: 10px;
+}
+.movTittle {
+    font-size: 18px;
+    color: #14142B;
+    font-weight: 600;
+    margin-top: 24px;
+}
+.movGenre {
+    font-size: 12px;
+    color: #A0A3BD;
+    font-weight: 400;
+    margin-top: 8px;
+}
+.asideGchild1 button {
+    width: 159px;
+    height: 33px;
+    background-color: white;
+    border: 1px #5F2EEA solid;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: lighter;
+    color: #5F2EEA;
+    margin-top: 40px;
+}
+
+
+
+.sectionHome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 96px 130px;
+}
+.sectionChild {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 48px 0;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 16px 32px 0px #bababa4a;
+}
+.sectionTag {
+    font-size: 24px;
+    font-weight: 400;
+    color: #4E4B66;
+}
+.sectionTag1 {
+    font-size: 48px;
+    font-weight: 600;
+    color: #5F2EEA;
+}
+.sectionGchild {
+    display: flex;
+    gap: 16px;
+    margin-top: 48px;
+    margin-bottom: 40px;
+}
+.sectionGchild input {
+    width: 306px;
+    height: 53px;
+    border: 2px #DEDEDE solid;
+    border-radius: 6px;
+    padding-left: 24px;
+}
+.sectionGchild input::placeholder {
+    font-size: 14px;
+    font-weight: 400;
+    color: #A0A3BD;
+}
+.sectionGchild button {
+    width: 150px;
+    height: 53px;
+    background-color: #5F2EEA;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    color: white;
+}
+.sectionTag2 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #6E7191;
+    letter-spacing: 1px;
+}
+
+
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 95px 80px;
+}
+.footerHome {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+}
+.footerHome1 {
+    display: flex;
+    flex-direction: column;
+}
+.footerHome2 {
+    display: flex;
+    flex-direction: column;
+}
+.footerHome3 {
+    display: flex;
+    flex-direction: column;
+}
+.footerHome4 {
+    display: flex;
+    flex-direction: column;
+}
+.footerHome1 img {
+    width: 185px;
+    margin-bottom: 16px;
+}
+.footerTag {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: #6E7191;
+}
+.footerNav {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 31px;
+}
+.footerNavChild1 {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+.footerNavChild {
+    font-size: 14px;
+    font-weight: 400;
+    color: #4E4B66;
+    margin-bottom: 15px;
+}
+.footerNavChild2 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #4E4B66;
+    margin-bottom: 15px;
+}
+.sponsor {
+    width: 122px;
+    margin-bottom: 24px;
+}
+.sponsor1 {
+    width: 175px;
+    margin-bottom: 24px;
+}
+.sponsor2 {
+    width: 80px;
+    margin-bottom: 24px;
+}
+.footerHome4 img {
+    width: 24px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    margin-top: 3px;
+}
+.copyright {
+    font-size: 16px;
+    font-weight: 400;
+    color: #4E4B66;
+}
+
+
+/* media query */
+/* berakpoint1 */
+@media (max-width: 700px) {
+    .homeNav {
+        display: none;
+    }
+    .homeNav2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100vw;
+        height: 104px;
+        padding: 0 50px;
+    }
+    .menuBurger {
+        width: 30px;
+    }
+    .homeHeader {
+        flex-direction: column;
+        gap: 50px;
+    }
+    .tagChild {
+        display: flex;
+        font-size: 18px;
+        font-weight: 400;
+        color: #A0A3BD;
+        letter-spacing: 0;
+        justify-content: center;
+    }
+    .tagChild1 {
+        display: flex;
+        font-size: 36px;
+        font-weight: 700;
+        justify-content: center;
+    }
+    .imgHome {
+        width: 300px;
+    }
+    main {
+        padding-left: 50px;
+        padding-right: 0px;
+    }
+    .mainChild .mainGchild .nowShow {
+        font-size: 16px;
+    }
+    .mainChild .mainGchild img {
+        margin-top: 16px;
+        width: 70px;
+    }
+    .mainChild .viewAll {
+        font-size: 16px;
+        padding-right: 50px;
+    }
+    .mainChild1 {
+        gap: 20px;
+    }
+    aside {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 50px;
+        padding-right: 0px;
+    }
+    .asideChild .asideGchild .upcoming {
+        font-size: 16px;
+    }
+    .asideChild .viewAll {
+        padding-right: 50px;
+    }
+    .monthBut {
+        gap: 10px; 
+    }
+    .asideChild1 {
+        gap: 20px;
+    }
+    .sectionHome {
+        padding: 50px 50px;
+    }
+    .sectionChild {
+        padding: 40px 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    .sectionTag {
+        font-size: 16px;
+    }
+    .sectionTag1 {
+        font-size: 36px;
+    }
+    .sectionGchild {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .sectionGchild input {
+        width: 200px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .sectionGchild input::placeholder {
+        font-size: 14px;
+        font-weight: 400;
+        color: #A0A3BD;
+    }
+    .sectionGchild button {
+        width: 100px;
+    }
+    .sectionTag2 {
+        text-align: center;
+    }
+    .footer {
+        padding: 10px 10px;
+    }
+    .footerHome {
+        display: grid;
+        gap: 50px;
+    }
+    .footerHome1 {
+        align-items: center;
+    }
+    .copyright {
+        font-size: 14px;
+        padding-bottom: 50px;
+    }
+}
+
+
+/* breakpoint2 */
+@media (min-width: 701px) and (max-width: 900px) {
+    /* SIGN IN & UP */
+    .all {
+        display: flex;
+        flex-direction: column;
+    }
+    .left {
+        width: 100%;
+        height: 100vh;
+        padding: 50px 0;
+    }
+    .hashtag {
+        font-size: 18px;
+        font-weight: 200;
+    }
+    .imgTic {
+        width: 100px;
+    }
+    .right {
+        padding: 20px 100px;
+        justify-content: center;
+        align-items: center;
+    }
+    .headSign {
+        font-size: 36px;
+        font-weight: 600;
+    }
+    .right .headSign2 {
+        text-align: center;
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    .right .inputForm {
+        text-align: center;
+        font-size: 14px;
+    }
+    .right .inputForm input {
+        width: 300px;
+        height: 20px;
+        margin-top: 8px;
+        margin-bottom: 12px;
+    }
+    .right .inputForm input::placeholder {
+        text-align: center;
+        font-size: 14px;
+    }
+    .right .signBut button {
+        width: 300px;
+        height: 50px;
+    }
+    .right .signBut {
+        margin-top: 5px;
+    }
+    .footSign {
+        font-size: 14px;
+    }
+
+    /* HOME */
+    .homeNav {
+        display: none;
+    }
+    .homeNav2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100vw;
+        height: 104px;
+        padding: 0 50px;
+    }
+    .menuBurger {
+        width: 30px;
+    }
+    .homeHeader {
+        flex-direction: column;
+        gap: 50px;
+    }
+    .tagChild {
+        display: flex;
+        font-size: 18px;
+        font-weight: 400;
+        color: #A0A3BD;
+        letter-spacing: 0;
+        justify-content: center;
+    }
+    .tagChild1 {
+        display: flex;
+        font-size: 36px;
+        font-weight: 700;
+        justify-content: center;
+    }
+    .imgHome {
+        width: 300px;
+    }
+    main {
+        padding-left: 50px;
+        padding-right: 0px;
+    }
+    .mainChild .mainGchild .nowShow {
+        font-size: 16px;
+    }
+    .mainChild .mainGchild img {
+        margin-top: 16px;
+        width: 70px;
+    }
+    .mainChild .viewAll {
+        font-size: 16px;
+        padding-right: 50px;
+    }
+    .mainChild1 {
+        gap: 20px;
+    }
+    aside {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 50px;
+        padding-right: 0px;
+    }
+    .asideChild .asideGchild .upcoming {
+        font-size: 16px;
+    }
+    .asideChild .viewAll {
+        padding-right: 50px;
+    }
+    .monthBut {
+        gap: 10px; 
+    }
+    .asideChild1 {
+        gap: 20px;
+    }
+    .sectionHome {
+        padding: 50px 50px;
+    }
+    .sectionChild {
+        padding: 40px 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    .sectionTag {
+        font-size: 16px;
+    }
+    .sectionTag1 {
+        font-size: 36px;
+    }
+    .sectionGchild {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .sectionGchild input {
+        width: 200px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .sectionGchild input::placeholder {
+        font-size: 14px;
+        font-weight: 400;
+        color: #A0A3BD;
+    }
+    .sectionGchild button {
+        width: 100px;
+    }
+    .sectionTag2 {
+        text-align: center;
+    }
+    .footerHome {
+        display: grid;
+        gap: 50px;
+    }
+    .footerHome1 {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .footerHome2 {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .footerHome3 {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    .footerHome4 {
+        grid-column: 2;
+        grid-row: 2;
+    }
+}
+
+/* breakpoint3 */
+@media (min-width: 901px) and (max-width: 1200px) {
+    /* SIGN IN & UP */
+    .right {
+        padding: 30px 30px;
+        justify-content: center;
+        align-items: center;
+    }
+    .right .headSign2 {
+        text-align: center;
+    }
+    .right .inputForm {
+        text-align: center;
+    }
+    .right .inputForm input {
+        width: 350px;
+        height: 35px;
+    }
+    .right .inputForm input::placeholder {
+        text-align: center;
+    }
+    .right .signBut button {
+        width: 350px;
+        height: 50px;
+    }
+
+    /* HOME */
+    .tagChild {
+        font-size: 18px;
+        font-weight: 400;
+        color: #A0A3BD;
+        letter-spacing: 0;
+    }
+    .tagChild1 {
+        font-size: 36px;
+        font-weight: 700;
+    }
+    .imgHome {
+        width: 300px;
+    }
+    .footerHome {
+        display: grid;
+        gap: 50px;
+    }
+    .footerHome1 {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .footerHome2 {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .footerHome3 {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    .footerHome4 {
+        grid-column: 2;
+        grid-row: 2;
+    }
+}
