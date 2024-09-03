@@ -30,6 +30,10 @@ body {
     background-size: cover;
 }
 
+.left1 {
+    display: none;
+}
+
 .hashtag {
     font-family: "inter", sans-serif;
     color: #FFFF;
@@ -459,6 +463,10 @@ aside {
     color: #4E4B66;
     margin-bottom: 15px;
 }
+.footerNavChild3 {
+    display: flex;
+    flex-direction: column;
+}
 .sponsor {
     width: 122px;
     margin-bottom: 24px;
@@ -487,6 +495,63 @@ aside {
 /* media query */
 /* berakpoint1 */
 @media (max-width: 700px) {
+    /* SIGN IN & UP */
+    .all {
+        display: flex;
+        flex-direction: column;
+    }
+    .left {
+        display: none;
+    }
+    .left1 {
+        display: block;
+    }
+    .hashtag {
+        font-size: 18px;
+        font-weight: 200;
+    }
+    .imgTic {
+        width: 100px;
+    }
+    .right {
+        padding: 20px 50px;
+        justify-content: center;
+    }
+    .headSign {
+        font-size: 36px;
+        font-weight: 600;
+    }
+    .right .headSign2 {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    .right .inputForm {
+        font-size: 14px;
+    }
+    .right .inputForm input {
+        width: 300px;
+        height: 20px;
+        margin-top: 8px;
+        margin-bottom: 12px;
+        border-radius: 4px;
+    }
+    .right .inputForm input::placeholder {
+        font-size: 14px;
+    }
+    .right .signBut button {
+        width: 300px;
+        height: 50px;
+        border-radius: 6px;
+    }
+    .right .signBut {
+        margin-top: 5px;
+    }
+    .footSign {
+        font-size: 12px;
+    }
+
+
+    /* HOME */
     .homeNav {
         display: none;
     }
@@ -499,11 +564,16 @@ aside {
         padding: 0 50px;
     }
     .menuBurger {
-        width: 30px;
+        width: 20px;
     }
     .homeHeader {
         flex-direction: column;
         gap: 50px;
+    }
+    .headTag {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
     }
     .tagChild {
         display: flex;
@@ -511,7 +581,7 @@ aside {
         font-weight: 400;
         color: #A0A3BD;
         letter-spacing: 0;
-        justify-content: center;
+        justify-content: flex-start;
     }
     .tagChild1 {
         display: flex;
@@ -581,9 +651,8 @@ aside {
         margin-bottom: 20px;
     }
     .sectionGchild input {
-        width: 200px;
-        padding-left: 50px;
-        padding-right: 50px;
+        width: 250px;
+        padding-left: 10px;
     }
     .sectionGchild input::placeholder {
         font-size: 14px;
@@ -591,20 +660,50 @@ aside {
         color: #A0A3BD;
     }
     .sectionGchild button {
-        width: 100px;
+        width: 250px;
     }
     .sectionTag2 {
         text-align: center;
     }
     .footer {
-        padding: 10px 10px;
+        padding: 10px 30px;
+        align-items: flex-start;
     }
     .footerHome {
-        display: grid;
+        flex-direction: column;
         gap: 50px;
     }
     .footerHome1 {
-        align-items: center;
+        letter-spacing: 0;
+    }
+    .footerHome2 {
+        letter-spacing: 0;
+    }
+    .footerHome3 {
+        letter-spacing: 0;
+    }
+    .footerHome4 {
+        letter-spacing: 0;
+    }
+    .footerNavChild2 {
+        display: none;
+    }
+    .footerNavChild3 {
+        flex-direction: row;
+        gap: 40px;
+        margin-top: 10px;
+    }
+    .sponsor {
+        width: 60px;
+        margin-bottom: 0px;
+    }
+    .sponsor1 {
+        width: 70px;
+        margin-bottom: 0px;
+    }
+    .sponsor2 {
+        width: 50px;
+        margin-bottom: 0px;
     }
     .copyright {
         font-size: 14px;
