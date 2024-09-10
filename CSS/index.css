@@ -100,9 +100,13 @@ body {
 }
 
 .right .signBut {
-    display: flex;
-    align-items: center;
-    margin-top: 32px;
+    width: 500px;
+    height: 64px;
+    font-size: 16px;
+    color: #F7F7FC;
+    background-color: #5F2EEA;
+    border: none;
+    border-radius: 15px;
 }
 
 .right .signBut button {
@@ -167,6 +171,12 @@ body {
     background-color: #5F2EEA;
     border: none;
     border-radius: 6px;
+}
+.avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
 }
 .homeHeader {
     display: flex;
@@ -538,13 +548,10 @@ aside {
     .right .inputForm input::placeholder {
         font-size: 14px;
     }
-    .right .signBut button {
+    .right .signBut {
         width: 300px;
         height: 50px;
         border-radius: 6px;
-    }
-    .right .signBut {
-        margin-top: 5px;
     }
     .footSign {
         font-size: 12px;
@@ -759,12 +766,9 @@ aside {
         text-align: center;
         font-size: 14px;
     }
-    .right .signBut button {
+    .right .signBut {
         width: 300px;
         height: 50px;
-    }
-    .right .signBut {
-        margin-top: 5px;
     }
     .footSign {
         font-size: 14px;
@@ -923,7 +927,7 @@ aside {
     .right .inputForm input::placeholder {
         text-align: center;
     }
-    .right .signBut button {
+    .right .signBut {
         width: 350px;
         height: 50px;
     }
